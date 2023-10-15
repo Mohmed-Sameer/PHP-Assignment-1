@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+}
+body {
+  background-image: url('');
+  background-size: cover; /* Adjust as needed */
+  background-repeat: no-repeat; /* Adjust as needed */
+  padding: 10;
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+  background: url('../img/employee.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  backdrop-filter: blur(3px);
+}
+.header {
+display: block;
+margin: 0 auto;
+width: 99.9%;
+height: 50%;
+max-width: 110%;
+box-shadow: none;
+background: linear-gradient(180deg, #FC466B 100%, #3F5EFB 50%);
+position: fixed;
+height: 65px!important;
+overflow: hidden;
+z-index: 10;
+padding: 0px; /* Add padding for spacing */
+display: flex; /* Use flexbox to position elements */
+
+}
+.main {
+    margin: 0 auto;
+    display:flex;
+    height: 90%;
+    margin-top: 60px;
+}
+.mainInner{
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.mainInner div{
+    display:table-cell;
+    vertical-align: middle;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 1.25px;
+}
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    margin-top: 60px;
+    transform: translateX(-250px);
+    transition: transform 250ms ease-in-out;
+    background: linear-gradient(160deg, #FC466B 40%, #3F5EFB 100%);
+}
+.sidebarMenuInner{
+    margin:0;
+    padding:0;
+    border-top: 3px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li{
+    list-style: none;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li span{
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.603);
+}
+.sidebarMenuInner li a{
+    color: #fffffff1;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+.sidebarMenuInner li a:hover{
+  color: rgb(210, 23, 23);
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 22px;
+    left: 15px;
+    height: 22px;
+    width: 22px;
+}
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+}
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Montserrat', sans-serif;
+  color: #131212;
+}
+p,a,li,figcaption,th,td,label,input{
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar-brand {
+  margin-left: 90%; /* Push the logo to the left side by pushing other elements to the right */
+}
+
+.navbar-brand img{
+  height: 70px;
+  max-width: 110px; /* Adjust the width as needed */
+  }
+  
+form{
+  height: 700px;
+  width: 420px;
+  background: url('../img/background.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  backdrop-filter: blur(3px);
+  position:absolute;
+  transform: translate(-50%,-50%);
+  top: 70%;
+  left: 50%;
+  bottom: 150%;
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  padding: 40px 20px;
+  padding-bottom: 60px;
+  background-repeat: initial;
+  
+}
+form *{
+  font-family: 'Poppins',sans-serif;
+  color: #cdbebe;
+  font-weight: bolder;
+  letter-spacing: 0.5px;
+  border:#999 4px;
+}
+
+label{
+  display: block;
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: 500px;
+}
+
+input{
+  display: inline-block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(191, 11, 11, 0.868);
+  border-radius: 3px;
+  padding: 0 8px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 200;
+  transition:inherit;
+  transition: background-color 0.3s ease, margin-top 0.2s ease;
+}
+input:hover {
+  background-color: rgba(174, 232, 240, 0.975) ;
+  transform: translateY(-2px);
+  box-shadow: 0px 2px 4px rgba(206, 100, 100, 0.1);
+}
+
+
+
+.form-group{
+  color: rgb(209, 197, 197);
+}
+
+form h2{
+  font-size: 36px;
+  line-height: 0px;
+  text-align: center;
+  color: rgb(221, 195, 195);
+  font-weight: 600px;
+  vertical-align: top;
+  margin-bottom: 10%;
+}
+
+.buttons{
+  display:inline;
+  word-spacing: 2rem;
+  background-color: #e9c1c1;
+}
+
+.form-row{
+  padding: 50px;
+}
+
+.form-row h2{
+  font-size: 2.5em;
+}
+.form-group{
+  margin: 15px 0px;
+}
+.form-group label {
+  display: inline; /* Display labels inline */
+  width: 30%; /* Adjust the width as needed */
+  text-align: right; /* Align the labels to the right */
+  margin-right: 2%; /* Add some spacing between labels and input fields */
+}
+.submit-message{
+  text-align: center;
+  font-size: 18px;
+  background-color: #e9c1c1;
+}
+
+
+::placeholder{
+  color: #d8caca;
+}
+.container{
+  padding-top: 60px;
+}
+.table {
+  width: 100%;
+  padding-top: 50px;
+  border: #131212;
+  border-radius: 5px;
+  text-align: center;
+  border-collapse: collapse;
+ }
+ 
+ .table th{
+  border: 3px solid #0c0c0c;
+  padding-top: 50px;
+  padding: 20px;
+  text-align: center;
+  background-color: #759aea;
+  color: #333;
+  font-weight: bold;
+ }
+ 
+ .table tr {
+  background-color: #8568ef;
+ }
+ 
+ .table tr:hover {
+  background-color: #eeb0b0;
+ }
+
+
+
+
+

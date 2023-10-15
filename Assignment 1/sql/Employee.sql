@@ -1,0 +1,1 @@
+SELECT * FROM dbms1.employee;
